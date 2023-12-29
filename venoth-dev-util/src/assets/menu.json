@@ -1,0 +1,41 @@
+{
+    "menu":[
+        {
+            "title":"Home"
+            
+        },
+        {
+            "title":"CronJob Generator"
+        },
+        {
+            "title":"Hash Generator"
+        },
+        {
+            "title":"JSON Formatter"
+        },
+        {
+            "title":"JSON <==> YAML converter"
+        },
+        {
+            "title":"MarkDown Previewer"
+        },
+        {
+            "title":"String Case Converter"
+        },
+        {   
+            "title":"Base 64 String Encode / Decode"
+        },
+        {
+            "title":"URL Encode / Decode"
+        },
+        {
+            "title":"Unix Timestamp Converter"
+        },
+        {
+            "title":"Browser Client Details"
+        },
+        {
+            "title":"Uptime Calculator"
+        }
+    ]
+}
