@@ -1,12 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-import FixedContainer from './components/Container'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import FixedContainer from './components/container/Container'
+import WelcomeMessage from './components/Homepage';
 
 function App() {
   return (
-    <div className="App">
-      <FixedContainer />
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<WelcomeMessage/>}>
+          <Route index element={<WelcomeMessage />} />
+          <Route path="blogs" element={<><h1>blogs</h1></>} />
+          <Route path="contact" element={<WelcomeMessage />} />
+          <Route path="*" element={<WelcomeMessage />} />
+      </Route>
+    </Routes>
+    </BrowserRouter>
   );
 }
 
