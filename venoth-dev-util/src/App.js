@@ -1,7 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import FixedContainer from './components/container/Container'
-import WelcomeMessage from './components/Homepage';
+import WelcomeMessage from './components/Home/Homepage';
 
 function App() {
   return (
@@ -9,12 +8,13 @@ function App() {
     <Routes>
       <Route path='/' element={<WelcomeMessage/>}>
           <Route index element={<WelcomeMessage />} />
-          <Route path="blogs" element={<><h1>blogs</h1></>} />
+          <Route path="blogs" element={<WelcomeMessage />} />
           <Route path="contact" element={<WelcomeMessage />} />
           <Route path="*" element={<WelcomeMessage />} />
       </Route>
     </Routes>
     </BrowserRouter>
+    
   );
 }
 

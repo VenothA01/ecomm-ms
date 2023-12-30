@@ -4,9 +4,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
-import getIconMap from '../utils';
 import HomeIcon from '@mui/icons-material/Home';
 import ScheduleIcon from '@mui/icons-material/Schedule';
 import TagIcon from '@mui/icons-material/Tag';
@@ -19,7 +17,9 @@ import HttpsIcon from '@mui/icons-material/Https';
 import SettingsBackupRestoreIcon from '@mui/icons-material/SettingsBackupRestore';
 import LanguageIcon from '@mui/icons-material/Language';
 import TimerIcon from '@mui/icons-material/Timer';
-import WelcomeMessage from './Homepage'
+import WelcomeMessage from '../components/Home/Homepage'
+
+
 
 const mapObject = {
     "menu":[
@@ -103,7 +103,9 @@ export default function BasicList() {
                   <ListItemIcon>
                     {menuItem.icon}
                   </ListItemIcon>
-                  <ListItemText primary={menuItem.title} />
+                  {/* <Link to={menuItem.title}>
+                    {menuItem.component}
+                  </Link> */}
                 </ListItemButton>
               </ListItem>
             ))}
