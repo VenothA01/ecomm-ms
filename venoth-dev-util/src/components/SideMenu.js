@@ -19,6 +19,7 @@ import LanguageIcon from '@mui/icons-material/Language';
 import TimerIcon from '@mui/icons-material/Timer';
 import WelcomeMessage from '../components/Home/Homepage'
 import InProgressMessage from '../components/progress/InProgress'
+import CronEvaluator from './cron/CronEvaluator';
 
 
 const mapObject = {
@@ -26,7 +27,7 @@ const mapObject = {
         {
             "title":"Home",
             "icon": <HomeIcon />,
-            "component": <WelcomeMessage />,
+            "component": <CronEvaluator />,
             "path": "/home"
         },
         {
