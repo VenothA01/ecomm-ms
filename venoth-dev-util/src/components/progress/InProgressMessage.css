@@ -1,0 +1,39 @@
+.in-progress-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    opacity: 0; /* Initial opacity set to 0 for fade-in effect */
+    animation: fadeIn 1s forwards; /* Animation duration: 1 second */
+  
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  }
+  
+  .message {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .sub-message {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s forwards; /* Animation duration: 1 second */
+  
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  }
+  

@@ -18,8 +18,7 @@ import SettingsBackupRestoreIcon from '@mui/icons-material/SettingsBackupRestore
 import LanguageIcon from '@mui/icons-material/Language';
 import TimerIcon from '@mui/icons-material/Timer';
 import WelcomeMessage from '../components/Home/Homepage'
-import { Link } from 'react-router-dom';
-
+import InProgressMessage from '../components/progress/InProgress'
 
 
 const mapObject = {
@@ -27,62 +26,74 @@ const mapObject = {
         {
             "title":"Home",
             "icon": <HomeIcon />,
-            "component": <WelcomeMessage />
+            "component": <WelcomeMessage />,
+            "path": "/home"
         },
         {
             "title":"CronJob Generator",
             "icon": <ScheduleIcon />,
-            "component": <WelcomeMessage />
+            "component": <InProgressMessage />,
+            "path": "/CronJobGenerator"
         },
         {
             "title":"Hash Generator",
             "icon": <TagIcon />,
-            "component": <WelcomeMessage />
+            "component": <InProgressMessage />,
+            "path": "/HashGenerator"
         },
         {
             "title":"JSON Formatter",
             "icon": <DataObjectIcon />,
-            "component": <WelcomeMessage />
+            "component": <InProgressMessage />,
+            "path": "/JSONFormatter"
         },
         {
             "title":"JSON <==> YAML converter",
             "icon": <DeveloperModeIcon />,
-            "component": <WelcomeMessage />
+            "component": <WelcomeMessage />,
+            "path": "/JSON-YAMLConverter"
         },
         {
             "title":"MarkDown Previewer",
             "icon": <PreviewIcon />,
-            "component": <WelcomeMessage />
+            "component": <WelcomeMessage />,
+            "path": "/MarkDownPreviewer"
         },
         {
             "title":"String Case Converter",
             "icon": <LocalConvenienceStoreIcon />,
-            "component": <WelcomeMessage />
+            "component": <WelcomeMessage />,
+            "path": "/StringCaseConverter"
         },
         {   
             "title":"Base 64 String Encode / Decode",
             "icon": <EnhancedEncryptionIcon />,
-            "component": <WelcomeMessage />
+            "component": <WelcomeMessage />,
+            "path": "/Base64EncoderDecoder"
         },
         {
             "title":"URL Encode / Decode",
             "icon": <HttpsIcon />,
-            "component": <WelcomeMessage />
+            "component": <WelcomeMessage />,
+            "path": "/URLEncoderDecoder"
         },
         {
             "title":"Unix Timestamp Converter",
             "icon": <SettingsBackupRestoreIcon />,
-            "component": <WelcomeMessage />
+            "component": <WelcomeMessage />,
+            "path": "/UnixTimestampConverter"
         },
         {
             "title":"Browser Client Details",
             "icon": <LanguageIcon />,
-            "component": <WelcomeMessage />
+            "component": <WelcomeMessage />,
+            "path": "/BrowserClientDetails"
         },
         {
             "title":"Uptime Calculator",
             "icon": <TimerIcon />,
-            "component": <WelcomeMessage />
+            "component": <WelcomeMessage />,
+            "path": "/UptimeCalculator"
         }
     ]
 }
@@ -100,20 +111,18 @@ export default function BasicList() {
           <List>
             {mapObject.menu.map((menuItem, index) => (
               <ListItem key={index} disablePadding>
-                <ListItemButton href={menuItem.title}>
+                <ListItemButton href={menuItem.path} >
                   <ListItemIcon>
                     {menuItem.icon}
                   </ListItemIcon>
                   {menuItem.title}
                 </ListItemButton>
+                <Divider />
               </ListItem>
             ))}
           </List>
         </nav>
-        <Divider />
-        <nav aria-label="secondary mailbox folders">
-          {/* Additional list items can be added here if needed */}
-        </nav>
+        
       </Box>
     );
   }
