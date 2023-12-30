@@ -18,6 +18,7 @@ import SettingsBackupRestoreIcon from '@mui/icons-material/SettingsBackupRestore
 import LanguageIcon from '@mui/icons-material/Language';
 import TimerIcon from '@mui/icons-material/Timer';
 import WelcomeMessage from '../components/Home/Homepage'
+import { Link } from 'react-router-dom';
 
 
 
@@ -99,13 +100,11 @@ export default function BasicList() {
           <List>
             {mapObject.menu.map((menuItem, index) => (
               <ListItem key={index} disablePadding>
-                <ListItemButton>
+                <ListItemButton href={menuItem.title}>
                   <ListItemIcon>
                     {menuItem.icon}
                   </ListItemIcon>
-                  {/* <Link to={menuItem.title}>
-                    {menuItem.component}
-                  </Link> */}
+                  {menuItem.title}
                 </ListItemButton>
               </ListItem>
             ))}
