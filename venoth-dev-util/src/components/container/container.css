@@ -2,5 +2,6 @@
     display: flex;
     flex-direction: row;
     color: black;
-    /* padding-right: 10%; */
+    height: 100vh;
+    padding-right: 10%;
 }

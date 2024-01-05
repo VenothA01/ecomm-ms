@@ -20,7 +20,7 @@ function App() {
     <BrowserRouter>
     <Routes>
           <Route index element={<WelcomeMessage />} />
-          <Route path="blogs" element={<CronExpressionGenerator />} />
+          <Route path="CronJobGenerator" element={<CronExpressionGenerator />} />
           <Route path="contact" element={<WelcomeMessage />} />
           <Route path="*" element={<WelcomeMessage />} />
     </Routes>

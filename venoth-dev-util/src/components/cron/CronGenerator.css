@@ -1,0 +1,7 @@
+#cron-component{
+    /* background-color: blue; */
+    display: 'flex';
+    flex-direction: column;
+    padding: 10%;
+    margin: auto
+}

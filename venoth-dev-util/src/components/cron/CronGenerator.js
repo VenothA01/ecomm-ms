@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container } from '@mui/material';
 import BasicList from '../SideMenu';
-import '../../components/Home/home.css'
+import '../../components/cron/CronGenerator.css'
 import cronstrue from 'cronstrue'; 
 
 const CronExpressionGenerator = () => {
@@ -25,7 +25,8 @@ const CronExpressionGenerator = () => {
     <div>
     <Container id='main' maxWidth='100vw'>
     <BasicList />
-      <div>
+      <div id="cron-component">
+        <div>
         <label>Cron Expression:</label>
         <input
           type="text"
@@ -33,9 +34,10 @@ const CronExpressionGenerator = () => {
           onChange={handleInputChange}
           placeholder="Enter cron expression"
         />
-      
-        <label>Evaluated Result:</label>
-        <p>{evaluatedResult}</p>
+        </div>
+        <div>
+        <label>Evaluated Result: {evaluatedResult}</label>
+        </div>
       </div>
     </Container>
     </div>
