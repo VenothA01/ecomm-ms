@@ -19,7 +19,7 @@ import LanguageIcon from '@mui/icons-material/Language';
 import TimerIcon from '@mui/icons-material/Timer';
 import WelcomeMessage from '../components/Home/Homepage'
 import InProgressMessage from '../components/progress/InProgress'
-import CronEvaluator from './cron/CronEvaluator';
+import CronEvaluator from './cron/CronGenerator';
 
 
 const mapObject = {

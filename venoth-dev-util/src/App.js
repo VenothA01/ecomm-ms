@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import WelcomeMessage from './components/Home/Homepage';
 import InProgressMessage from './components/progress/InProgress'
-import CronEvaluator from './components/cron/CronEvaluator'
+import CronExpressionGenerator from './components/cron/CronGenerator'
 
 const currentURL = window.location.href;
 const currentPath = window.location.pathname;
@@ -19,9 +19,8 @@ function App() {
     
     <BrowserRouter>
     <Routes>
-      <Route path='/' element={<CronEvaluator/>} />
           <Route index element={<WelcomeMessage />} />
-          <Route path="blogs" element={<CronEvaluator />} />
+          <Route path="blogs" element={<CronExpressionGenerator />} />
           <Route path="contact" element={<WelcomeMessage />} />
           <Route path="*" element={<WelcomeMessage />} />
     </Routes>

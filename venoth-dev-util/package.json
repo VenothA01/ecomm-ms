@@ -8,6 +8,7 @@
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
     "cron-parser": "^4.9.0",
+    "cronstrue": "^2.47.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "latest",
