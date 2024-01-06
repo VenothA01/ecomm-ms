@@ -27,7 +27,7 @@ const mapObject = {
         {
             "title":"Home",
             "icon": <HomeIcon />,
-            "component": <CronEvaluator />,
+            "component": <WelcomeMessage />,
             "path": "/home"
         },
         {

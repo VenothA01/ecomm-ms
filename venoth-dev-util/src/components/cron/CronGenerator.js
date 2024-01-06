@@ -26,6 +26,7 @@ const CronExpressionGenerator = () => {
     <Container id='main' maxWidth='100vw'>
     <BasicList />
       <div id="cron-component">
+        <h3>Evaluate your cron expression</h3>
         <div>
         <label>Cron Expression:</label>
         <input
@@ -36,7 +37,7 @@ const CronExpressionGenerator = () => {
         />
         </div>
         <div>
-        <label>Evaluated Result: {evaluatedResult}</label>
+        <label> Evaluated Result: {evaluatedResult}</label>
         </div>
       </div>
     </Container>
